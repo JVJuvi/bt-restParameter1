@@ -28,7 +28,7 @@ document.querySelector('#btnLop2').onclick = function(){
     let diemEnglish = document.querySelector('#diemEnglish').value;
     console.log('diemEnglish: ', diemEnglish);
 
-    let lop2 = tinhDiemTrungBinh(Number(diemVan),Number(diemSu),Number(diemDia),Number(diemEnglish));
+    let lop2 = tinhDiemTrungBinh(Number(diemVan),Number(diemSu),Number(diemDia),Number(diemEnglish)).toFixed(2);
     console.log('lop2: ', lop2);
 
     document.querySelector('#ketQuaLop2').innerHTML = lop2;
